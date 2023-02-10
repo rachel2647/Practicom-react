@@ -111,7 +111,10 @@ export default function Form() {
                             "identity": child.tz,
                             "idParent": parentId
                         }
-                    }).then(result => console.log(result))
+                    }).then(result => {
+                        console.log(result);
+                        alert("send succesfully!");
+                    })
                 })
             })
     }
